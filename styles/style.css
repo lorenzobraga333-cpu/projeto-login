@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*
+    PALETA DE CORES:
+    #FFEC99
+    #99BBFF
+    #471FB9
+    #E40A48
+    #616F8B
+*/
+
+/*
+    FONTES:
+    font-family: "Asap Sharp", sans-serif;
+*/
+
+:root {
+    --fonte1: "Asap Sharp", sans-serif;
+}
+
+* {
+    font-family: var(--fonte1);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    width: 100vw;
+}
+
+
+body {
+    background-image: linear-gradient(to top, #616F8B, #99BBFF);
+    background-repeat: no-repeat;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.300);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#img {
+    display: block;
+    background: black url('../images/img-login.jpg') no-repeat center / cover;
+    height: 200px;
+}
+
+section#login > div#form {
+    display: block;
+    padding: 10px;
+}
